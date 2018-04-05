@@ -1,4 +1,4 @@
-package cn.tju.scs;
+package cn.tju.scs.test;
 
 public class HelloJava {
 

@@ -7,9 +7,10 @@ package cn.tju.scs.c01;
  */
 class Singleton {
      private static Singleton singleton = new Singleton();
+     public  static int counter1;     
+     public  static int counter2 = 0;
      
-     public static int counter1;     
-     public static int counter2 = 0;
+     
      
      private Singleton()
      {

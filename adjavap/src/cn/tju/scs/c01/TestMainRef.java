@@ -10,6 +10,7 @@ public class TestMainRef {
 		car2.price = 18.2;		
 		car1.getCarInfo();
 		car2.getCarInfo();		
+		
 		Car car3 = null;
 		car3 = car1;		
 		car3.price = 22.2;

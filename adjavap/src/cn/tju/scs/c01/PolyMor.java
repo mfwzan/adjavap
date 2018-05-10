@@ -39,6 +39,7 @@ public class PolyMor {
 		am.eat();
 		am.sleep();
 		am.run();
+		
 
 		System.out.println(am.num);
 		System.out.println(am.age);

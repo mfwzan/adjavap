@@ -5,8 +5,8 @@ public class ThisTest {
 	
 	ThisTest(int i){
 		this.i = i + 1;
-		System.out.println("1--Int constructor i---this.i:" + "i" + "---" + this.i);
-		System.out.println("2--i - 1:" + (i - 1) + "   this.i+1:" + (this.i + 1));
+		System.out.println("1--Int constructor i---this.i:" + i + "---" + this.i);
+		System.out.println("2--i-1:" + (i - 1) + "   this.i+1:" + (this.i + 1));
 	}
 	
 	ThisTest(String s){

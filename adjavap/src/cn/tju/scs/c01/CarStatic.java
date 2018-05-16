@@ -5,16 +5,16 @@ public class CarStatic {
 	private double price;
 	static String birthplace;
 	
-//	public static void setBirthplace(String birthplace) {
-//		CarStatic.birthplace = birthplace; // Why CarStatic? Not this?
-//	}
-//	
-//	public static String getBirthplace() {
-//		return birthplace;
-//	}
+	public static void setBirthplace(String birthplace) {
+		CarStatic.birthplace = birthplace; // Why CarStatic? Not this?
+	}
+	
+	public static String getBirthplace() {
+		return birthplace;
+	}
 	
 	void getCarInfo(){
-		System.out.println("汽车名称："+ getName() + "，汽车价格：" + getPrice());
+		System.out.println("汽车名称："+ getName() + "，汽车价格：" + getPrice() + "产地：" + getBirthplace());
 	}
 
 	public String getName() {

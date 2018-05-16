@@ -4,8 +4,18 @@ public class CarEn {
 	private String name;
 	private double price;
 	
+	public CarEn(String name, double price){
+		this.name = name;
+		this.price = price;
+	}
+	
 	void getCarInfo(){
 		System.out.println("汽车名称："+ getName() + "，汽车价格：" + getPrice());
+	}
+	
+	@Override
+	public String toString() {
+		return "汽车名称："+ this.getName() + "，汽车价格：" + this.getPrice();
 	}
 
 	public String getName() {

@@ -35,6 +35,7 @@ public class PolyMorphDemo {
 //		PA a = new PB();
 //		PB b = (PB)a;
 //		b.print();
+//		b.test();
 		
 		/**
 		 * 向上转型：
@@ -57,8 +58,16 @@ public class PolyMorphDemo {
 //		PB b = (PB)a;
 //		b.funB();
 		
+//		PA a = new PB();
+//		fun(a);
+		
 		PA a = new PB();
-		fun(a);
+		System.out.println(a instanceof PA);
+		System.out.println(a instanceof PB);
+		if (a instanceof PB){
+			PB b = (PB)a;
+			b.print();
+		}
 				
 	}
 	

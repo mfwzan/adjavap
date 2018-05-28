@@ -15,6 +15,8 @@ public class DynamicClient {
 		Subject subject = (Subject)Proxy.newProxyInstance(clazz.getClassLoader(), 
 				realSubject.getClass().getInterfaces(), handler);
 		subject.request();
+		subject.output();
+		System.out.println(subject.getClass());
 		
 
 	}

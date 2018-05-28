@@ -34,6 +34,12 @@ public class ProxySubject implements Subject {
 		System.out.println(dateDiff + "毫秒完成了租房");
 
 	}
+
+	@Override
+	public void output() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

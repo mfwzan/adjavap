@@ -24,12 +24,12 @@ public class DynamicSubject implements InvocationHandler {
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		t1 = new Date(System.currentTimeMillis());
-		System.out.println("租房前的时间: " + new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(t1));
+		System.out.println(method + "租房前的时间: " + new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(t1));
 		
 		method.invoke(obj, args);
 		
 		t2 = new Date(System.currentTimeMillis());
-		System.out.println("租房后的时间: " + new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(t2));
+		System.out.println(method + "租房后的时间: " + new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(t2));
 		
 		dateDiff = t2.getTime() - t1.getTime(); 
 		System.out.println(dateDiff + "毫秒完成了租房");

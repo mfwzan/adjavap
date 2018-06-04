@@ -9,15 +9,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-//@Documented
-//@Retention(RetentionPolicy.RUNTIME)
-//
-//public @interface MyAnnotation {
-//	String hello() default "TJU";
-//	String world();
-//
-//}
 
+@Retention(RetentionPolicy.RUNTIME)
 public @interface MyAnnotation{
 	String hello() ;
 	String world();

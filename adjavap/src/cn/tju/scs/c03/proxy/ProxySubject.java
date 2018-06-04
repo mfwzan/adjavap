@@ -27,6 +27,12 @@ public class ProxySubject implements Subject {
 		t1 = new Date(System.currentTimeMillis());
 		this.before();
 		realsubject.request();
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		this.after();
 		t2 = new Date(System.currentTimeMillis());
 		

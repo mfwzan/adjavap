@@ -2,9 +2,9 @@ package cn.tju.scs.c03.annotation;
 
 @MyAnnotation(hello = "TJU",world="SCS")
 public class MyAnnTest {
-	@MyAnnotation(hello = "TJU2",world="SCS2")
+	@MyAnnotation(hello = "TJUMethod",world="SCSMethod")
 	public void output(){
-		System.out.println("TEst");
+		System.out.println("Test");
 	}
 
 }

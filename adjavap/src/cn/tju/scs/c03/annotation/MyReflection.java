@@ -10,9 +10,9 @@ public class MyReflection {
 		Method m = c.getMethod("output", new Class[]{});
 		
 		Boolean flag = c.isAnnotationPresent(MyAnnotation.class);
-		
+		System.out.println(flag);
 		if (flag){
-			m.invoke(mytest, new Object[]{});
+//			m.invoke(mytest, new Object[]{});
 			MyAnnotation myann = m.getAnnotation(MyAnnotation.class);
 			System.out.println(myann.hello() + " ,  " + myann.world());
 		}

@@ -12,7 +12,7 @@ import java.io.Serializable;
 
 class Book implements Serializable{
 	
-	//序列号的版本编号
+	//序列化的版本编号
 	private static final long serialVersionUID = 1L;
 	private String title;
 	private double price;
@@ -29,16 +29,17 @@ class Book implements Serializable{
 
 public class SerialDemo {
 	public static void main(String[] args) throws Exception {
-		ser();
+//		ser();
 		unser();
 	}
 	
-	public static void ser() throws Exception{
-		File file = new File("E:" + File.separator + "demo" +File.separator + "book.ser");
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
-		oos.writeObject(new Book("TTTT",29.2));
-		oos.close();
-	}
+//	public static void ser() throws Exception{
+//		File file = new File("E:" + File.separator + "demo" +
+//				File.separator + "book.ser");
+//		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
+//		oos.writeObject(new Book("TTTT",29.2));
+//		oos.close();
+//	}
 	
 	public static void unser() throws Exception{
 		File file = new File("E:" + File.separator + "demo" +File.separator + "book.ser");

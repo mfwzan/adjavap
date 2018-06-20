@@ -3,8 +3,8 @@ package cn.tju.scs.c06.collection;
 public class EqualsDemo {
 
 	public static void main(String[] args) {
-		int i1 = 400;
-		int i2 = 400;
+		int i1 = 40;
+		int i2 = 40;
 		Integer i3 = 400;
 		Integer i4 = 400;
 		

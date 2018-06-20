@@ -41,9 +41,9 @@ public class PolyMor {
 		am.run();
 		
 
-//		System.out.println(am.num);
-//		System.out.println(am.age);
-//		
+		System.out.println(am.num);
+		System.out.println(am.age);
+		
 		
 		System.out.println("--------------------");
 		Cat ct = (Cat)am;

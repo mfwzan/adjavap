@@ -12,7 +12,7 @@ public class EncodeDemo {
 		File file = new File("E:" + File.separator + "demo" + File.separator + "encode.txt");
 		OutputStream os = new FileOutputStream(file);
 		
-		os.write("中国万岁".getBytes("GB2312"));
+		os.write("中国万岁".getBytes("UTF-8"));
 		os.close();
 
 	}

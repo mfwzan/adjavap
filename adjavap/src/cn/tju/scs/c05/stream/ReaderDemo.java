@@ -7,7 +7,8 @@ import java.io.Reader;
 
 public class ReaderDemo {
 	public static void main(String[] args) throws Exception {
-		File file = new File("E:" + File.separator + "demo" + File.separator + "writer.txt");
+		File file = new File("E:" + File.separator + "demo" + 
+				File.separator + "writer.txt");
 		if (file.exists()){
 			Reader in = new FileReader(file);
 			char data[] = new char[1024];

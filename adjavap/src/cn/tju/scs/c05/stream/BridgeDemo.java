@@ -9,7 +9,8 @@ import java.io.Writer;
 
 public class BridgeDemo {
 	public static void main(String[] args) throws Exception {
-		File file = new File("E:" + File.separator + "demo" + File.separator + "writer.txt");
+		File file = new File("E:" + File.separator + "demo" + 
+				File.separator + "writeroutput.txt");
 		if (!file.getParentFile().exists()){
 			file.getParentFile().mkdirs();
 		}
